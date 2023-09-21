@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Footer</title>
+    <style>
+        /* Reset some default margin and padding */
+        body, h1, h2, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Style for the footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+
+        /* Container for the divs */
+        .footer-container {
+            width: 100%;
+            /* margin: 0 auto; */
+            display: flex;
+            flex-wrap: wrap;
+            /* justify-content: space-around; */
+        }
+
+        .border{
+            border: 2px solid white;
+        }
+
+        /* Style for each div */
+        .footer-item {
+            flex: 5;
+            text-align: center;
+            padding: 50px;
+        }
+
+        /* Media query for responsiveness */
+        @media (max-width: 768px) {
+            .footer-container {
+                flex-direction: column;
+                /* text-align: left; */
+            }
+            .footer-item {
+                flex: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <footer>
+        <div class="footer-container">
+            <div class="border footer-item">
+                <h3>Div 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="border footer-item">
+                <h3>Div 2</h3>
+                <p>Nullam ac urna sit amet orci hendrerit interdum eu et dolor.</p>
+            </div>
+            <div class="border footer-item">
+                <h3>Div 3</h3>
+                <p>Vestibulum nec erat ut mi hendrerit fermentum.</p>
+            </div>
+            <div class="border footer-item">
+                <h3>Div 4</h3>
+                <p>Quisque sit amet mauris a arcu aliquet gravida.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
